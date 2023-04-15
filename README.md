@@ -13,7 +13,7 @@ Coastal IQ is a Web based application developed for Miami AI's Future Hackathon 
 
 ```bash
 conda install requests flask jupyter numpy scipy matplotlib pandas scikit-learn
-conda install conda install pytorch==1.13.1 torchvision==0.14.1 -c pytorch
+conda install pytorch==1.13.1 torchvision==0.14.1 -c pytorch
 pip install transformers
 ```
 
