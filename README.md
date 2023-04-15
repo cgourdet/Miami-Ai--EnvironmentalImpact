@@ -19,7 +19,7 @@ pip install transformers
 
 ### Check out the code
 
-Go to the workspace folder and check out the project `git checkout https://github.com/cgourdet/coastal-iq.git`.
+Go to the workspace folder and check out the project `git clone https://github.com/cgourdet/coastal-iq.git`.
 
 ### Run the web app
 
