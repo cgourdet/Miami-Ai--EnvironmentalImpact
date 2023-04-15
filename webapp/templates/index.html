@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mobile Image and Text Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      /* Center the image and text */
+      img, p {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="data:image/png;base64, {{ image_str }}" />
+    {% for answer in answers %}
+      <p>{{ answer }}</p>
+    {% endfor %}
+  </body>
+</html>
