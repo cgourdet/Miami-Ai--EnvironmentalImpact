@@ -1,6 +1,6 @@
-# Project Title
+# CoastalIQ
 
-One Paragraph of project description goes here
+Coastal IQ is a Web based application developed for Miami AI's Future Hackathon 2023 to utilize Artificial Intelligence(AI) to solve four project theme - AI for education, AI for environmental protection,AI for local government and AI for concession optimization. CoastIQ is focuses on the theme of  AI for environmental protection. Currently designed as a web-based application that utilizes Artificial Intelligence(AI) to allow users to capture images of beach and coastal plants, animals and pollutants; the applications shares specific details such as the name,origin, native habitat, harzard information and determine what actions users should take with the captured image. This application serve as an initial prototype to model some of the features of costal IQ capabilities, whether as a fully developed web application or mobile application for future development.
 
 ## Getting Started
 
@@ -72,7 +72,11 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Eric WU* - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Claudia Gourdet* - *Initial work* - [cgourdet](https://github.com/cgourdet)
+* **Giancarlo Brea* - *Initial work* - [Giogio2448](https://github.com/Giogio2448)
+* **Daniel Ruso* - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
