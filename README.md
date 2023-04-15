@@ -2,91 +2,37 @@
 
 Coastal IQ is a Web based application developed for Miami AI's Future Hackathon 2023 to utilize Artificial Intelligence(AI) to solve four project theme - AI for education, AI for environmental protection,AI for local government and AI for concession optimization. CoastIQ is focuses on the theme of  AI for environmental protection. Currently designed as a web-based application that utilizes Artificial Intelligence(AI) to allow users to capture images of beach and coastal plants, animals and pollutants; the applications shares specific details such as the name,origin, native habitat, harzard information and determine what actions users should take with the captured image. This application serve as an initial prototype to model some of the features of costal IQ capabilities, whether as a fully developed web application or mobile application for future development.
 
-## Getting Started
+## How to set up and run the webapp
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Set up the Python environment
 
-### Prerequisites
+1. Download and install [miniconda](https://docs.conda.io/en/latest/miniconda.html).
+2. Create a Python environment -- name it coastaliq: `conda create --name coastaliq python=3.9`.
+3. After the environment is installed, activate it `conda activate coastaliq`.
+3. Install the required packages
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
+```bash
+conda install requests flask jupyter numpy scipy matplotlib pandas scikit-learn
+conda install conda install pytorch==1.13.1 torchvision==0.14.1 -c pytorch
+pip install transformers
 ```
 
-And repeat
+### Check out the code
 
-```
-until finished
-```
+Go to the workspace folder and check out the project `git checkout https://github.com/cgourdet/coastal-iq.git`.
 
-End with an example of getting some data out of the system or using it for a little demo
+### Run the web app
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+1. Activate the conda environment `conda activate coastaliq`.
+2. Go to the project folder after the code is checked out. Then go to the `webapp` folder.
+3. From there, launch the app, `flask run`.
+4. The web app can be accessed from the browser `http://127.0.0.1:5000/bootstrap`.
+5. To quick, ctrl+c.
 
 ## Authors
 
-* **Eric WU* - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Eric WU* - *Initial work* - [eric-wu](https://github.com/eric-wu)
 * **Claudia Gourdet* - *Initial work* - [cgourdet](https://github.com/cgourdet)
+* **K. P.* - *Initial work*
 * **Giancarlo Brea* - *Initial work* - [Giogio2448](https://github.com/Giogio2448)
-* **Daniel Ruso* - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* **Daniel Ruso* - *Initial work*
