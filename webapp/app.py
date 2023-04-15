@@ -192,3 +192,13 @@ def yolos():
     image_str = render_image_annos(image, annotated_img)
     answers = ask_chatgpt(annotated_img)
     return render_template('index.html', image_str=image_str, answers=answers)
+
+@app.route('/bootstrap')
+def bootstrap():
+    annotated_img = random.choice(image_annos)
+    image = Image.open(Path('static/img') / annotated_img['file_name'])
+    image_str = render_image_annos(image, annotated_img)
+    answers = ask_chatgpt(annotated_img)
+    return render_template('startbootstrap-scrolling-nav-gh-pages/index.html',
+                           image_str=image_str, answers=answers)
+

@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
       /* Center the image and text */
-      img, p {
+      img, div {
         display: block;
         margin: 0 auto;
         text-align: center;
       }
+      p {
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+        right: 0px;
+      }
     </style>
   </head>
   <body>
+    <div>
     <img src="data:image/png;base64, {{ image_str }}" />
     {% for answer in answers %}
-      <div>
         {% for entry in answer %}
           <p>{{ entry }}</p>
         {% endfor %}
-      </div>
     {% endfor %}
+    </div>
   </body>
 </html>
