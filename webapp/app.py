@@ -14,9 +14,62 @@ from flask import Flask, render_template
 
 # TODO: Limit to a few examples
 mocked_chatgpt = {
-    'gray snapper': '''
-    In Florida, the legal size limit for gray snapper (also known as mangrove snapper) is a minimum total length of 10 inches measured from the most forward point of the head with the mouth closed to the farthest tip of the tail. The daily bag limit for gray snapper is five fish per person within the 10-inch minimum and 14-inch maximum size range. It is important to check for any updates or changes to these regulations, as they may vary depending on the time of year or location. Additionally, it is always important to follow catch-and-release guidelines for any fish that are not within the legal size range or are unwanted.
-    ''',
+    'Scombridae -Tunas-': [
+        'Specific name: Scombridae (Tunas)',
+        'Native habitat: Tropical and temperate oceans',
+        'Population: Abundant, no specific numbers',
+        'Endangerment status: Not endangered',
+        'Hazard to coastal waters: No',
+        'Harmful if removed: Yes, can disrupt food web',
+        'Impact on marine ecosystem: Important top predator',
+        'Conservation efforts: Manage fishing quotas',
+        'Sustainable seafood option: Yes',
+        'Removal: Leave in natural habitat',
+    ],
+    'Lutjanidae -Snappers-': [
+        'Specific name: Lutjanidae (Snappers)',
+        'Native habitat: Coral reefs and estuaries',
+        'Population: Varies by species',
+        'Endangerment status: Some species threatened or endangered',
+        'Hazard to coastal waters: No',
+        'Harmful if removed: Yes, can disrupt food web',
+        'Impact on marine ecosystem: Important prey species',
+        'Conservation efforts: Manage fishing quotas',
+        'Sustainable seafood option: Yes, for some species',
+        'Removal: Leave in natural habitat unless harmful or illegal fishing.',
+    ],
+    "Carangidae -Jacks-": [
+        'Specific name: Carangidae (Jacks)',
+        'Native habitat: Coastal waters and reefs',
+        'Population: Abundant, no specific numbers',
+        'Endangerment status: Not endangered',
+        'Hazard to coastal waters: No',
+        'Harmful if removed: Yes, can disrupt food web',
+        'Impact on marine ecosystem: Important prey species',
+        'Conservation efforts: Manage fishing quotas',
+        'Sustainable seafood option: Yes, for some species',
+        'Removal: Leave in natural habitat unless harmful or illegal fishing.',
+    ],
+    "Acanthuridae -Surgeonfishes-": [
+        'Specific name: Acanthuridae (Surgeonfishes)',
+        'Native habitat: Coral reefs and rocky areas',
+        'Population: Varies by species',
+        'Endangerment status: Not endangered',
+        'Hazard to coastal waters: No',
+        'Harmful if removed: Yes, can disrupt food web',
+        'Impact on marine ecosystem: Important herbivores',
+        'Conservation efforts: Protect reef habitats',
+        'Sustainable seafood option: No',
+        'Removal: Leave in natural habitat unless harmful or illegal fishing.',
+    ],
+    'gray snapper': [
+        'Scientific name: Lutjanus spp',
+        'Native habitat: Coral reefs',
+        'Population: Varies by species',
+        'Endangerment status: Some species are overfished',
+        'Hazard to coastal water if removed: No',
+        'Recommendation: Leave in the wild unless within legal size and bag limit for fishing.',
+    ],
 }
 
 
@@ -41,7 +94,8 @@ def load_image_annos():
             'bbox': anno['bbox'],
         })
     # The images with annotations are changed back to a list
-    return list(images.values())
+    images = list(images.values())[:10]
+    return images
 
 
 def render_image_annos(image, img_with_annos):

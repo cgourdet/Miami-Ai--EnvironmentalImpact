@@ -15,7 +15,11 @@
   <body>
     <img src="data:image/png;base64, {{ image_str }}" />
     {% for answer in answers %}
-      <p>{{ answer }}</p>
+      <div>
+        {% for entry in answer %}
+          <p>{{ entry }}</p>
+        {% endfor %}
+      </div>
     {% endfor %}
   </body>
 </html>
